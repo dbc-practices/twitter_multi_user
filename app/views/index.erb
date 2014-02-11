@@ -13,6 +13,15 @@
         <strong>token:</strong> <%= @access_token.token %><br>
         <strong>secret:</strong> <%= @access_token.secret %><br>
       </p>
+    <form>
+      Tweet as ---! <br><br>
+      <input type="text" size="50" name="tweet"/>
+      <input type="submit" name="submit" value="tweet it!" />
+    </form>
+    <br>
+    <div id="msg"></div>
+    <br>
+
       <p>
         <button><a href="/sign_out">Sign Out</a></button>
       </p>
@@ -20,5 +29,6 @@
   <% else %>
     <button><a href="/sign_in">Sign In with Twitter</a></button>
   <% end %>
-  
+
+
 </div>

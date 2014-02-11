@@ -9,6 +9,8 @@ gem 'sinatra'
 # Use Thin for our web server
 gem 'thin'
 
+gem 'debugger'
+
 gem 'activesupport'
 gem 'activerecord'
 
