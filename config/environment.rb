@@ -38,11 +38,11 @@ require APP_ROOT.join('config', 'database')
 
 # Set up Twitter API keys and tokens
 
-ENV_CONFIG = YAML.load_file(APP_ROOT.join('config', 'twitter.yaml'))
+# ENV_CONFIG = YAML.load_file(APP_ROOT.join('config', 'twitter.yaml'))
 
-ENV_CONFIG.each do |key, value|
-  ENV[key] = value
-end
+# ENV_CONFIG.each do |key, value|
+  # ENV[key] = value
+# end
 
 CLIENT = Twitter::REST::Client.new do |config|
   config.consumer_key = ENV['TWITTER_KEY']
